@@ -1,0 +1,23 @@
+{block content}
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3" style="background: #eee;height: 500px"></div>
+			<div class="col-lg-6">
+				<div class="input">
+					{control form}
+				</div>
+				<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}">{$flash->message}</div>
+				<div class="post" n:foreach="$posts as $post">
+					<p>
+						{$post->content|texy}<br>
+						{$post->date} |
+						<a n:href="default $post->id">Upravit</a> |
+						<a n:href="deletePost! $post->id" style="color: red"
+						   data-confirm="Opravdu chcete tento příspěvek smazat?">Smazat</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3" style="background: #eee;height: 500px"></div>
+		</div>
+	</div>
+{/block}

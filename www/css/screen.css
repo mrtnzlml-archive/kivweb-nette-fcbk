@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin-ext);
+
+body { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
+a[href^="#error:"] { background: red; color: white; }
+h1, h2 { font-weight: 300; }
+textarea { width: 513px; height: 100px; }
+
+.footer { background: #333; color: #fff; min-height: 400px; padding: 50px; margin: 50px auto 0; font-size: 18px; line-height: 150%;  }
+.footer a { text-decoration: none; color: #fff; }
+.footer h4 { font-weight: normal; font-size: 20px; text-transform: uppercase; color: #bbb; }
+
+.header { background-color: #3a5795; height: 82px; min-width: 980px; color: #fff; }
+.header a { color: #fff; }
+.header a:hover { text-decoration: none; }
+
+.input { border: solid 1px #888; margin: 20px 10px; padding: 10px; border-radius: 4px; min-height: 100px; }
+
+.post { margin: 0 10px; padding: 10px; border: solid 1px #ddd; }
